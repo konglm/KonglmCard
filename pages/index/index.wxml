@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="userinfo">
+      <view class="usertxt">
+        <text class="username">{{name}}</text>
+        <text class="usernote">{{note}}</text>
+      </view>
+      <view class="userimg">
+        <image class="userinfo-avatar" src="http://otoc27cfn.bkt.clouddn.com/psb.jpg" background-size="cover" mode="aspectFill"></image>
+      </view>
+    </view>
+  </view>
+  <view class="page__bd">
+    <navigator bindtap="openLocation" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <image src="../../image/location.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>  山东省济南市金冠商务中心</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <view class="weui-cell">
+        <view class="weui-cell__hd">
+            <image src="../../image/time.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>  08:30-17:30
+        </view>
+    </view>
+    <navigator bindtap="calling" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <image src="../../image/phone.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>  18560237656</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <view class="weui-cells__title"><image src="../../image/picture.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>  个人图片</view>
+    <navigator bindtap="showImg" url="" hidden="{{txthidden}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <image class="userimg_small" src="http://otoc27cfn.bkt.clouddn.com/psb.jpg" background-size="cover" mode="aspectFill"></image>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">共3张图片</view>
+    </navigator>
+    <view class="weui-grids" hidden="{{imghidden}}">
+      <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+          <image class="userimg_big" src="http://otoc27cfn.bkt.clouddn.com/psb.jpg"  mode="scaleToFill"></image>
+      </navigator>
+      <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+          <image class="userimg_big" src="http://otoc27cfn.bkt.clouddn.com/psb2.jpg"  mode="scaleToFill"></image>
+      </navigator>
+      <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+          <image class="userimg_big" src="http://otoc27cfn.bkt.clouddn.com/psb3.jpg"  mode="scaleToFill"></image>
+      </navigator>
+    </view>
+  </view>
+</view>
